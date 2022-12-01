@@ -1,0 +1,130 @@
+* {
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    background-image: url(/public/img/status2022.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.title {
+    color: wheat;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(152, 27, 27, 1) 35%, rgba(0, 65, 255, 1) 100%);
+    text-align: center;
+}
+
+.proyects {
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    margin: auto;
+    text-align: center;
+    top: 1100%;
+    right: 110px;
+
+
+}
+
+.unique {
+
+    display: flex;
+    /* background-color: whitesmoke; */
+    border-radius: solid 2px;
+    border-style: groove;
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    color: purple;
+
+}
+
+.proyects :hover {
+
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(152, 27, 27, 1) 35%, rgba(0, 65, 255, 1) 100%);
+    color: blueviolet;
+
+}
+
+.unique a:link {
+    text-decoration: none;
+    color: purple;
+}
+
+.prensentation {
+    position: fixed;
+    animation: presentation 1s ease-out 0.5s 3 alternate both;
+    top: 150px;
+    left: 630px; 
+    margin: auto;
+    font-size: 19px;
+    background-color: rgb(233, 205, 122);
+    text-decoration: none;
+    border: hidden 2px;
+    border-radius: 10% / 50%;
+    
+
+}
+
+a:link {
+    /* text-decoration: none; */
+
+}
+
+.wtsp {
+
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 50px;
+    left: 10px;
+    animation: contacto 2s ease-in-out 1s 1 normal forwards;
+}
+
+@keyframes contacto {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(2px, -2px);
+	}
+
+	40% {
+		transform: translate(2px, 2px);
+	}
+
+	60% {
+		transform: translate(-2px, 2px);
+	}
+
+	80% {
+		transform: translate(-2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+
+@keyframes presentation {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px) rotate(-200deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0) rotate(0deg);
+	}
+}
