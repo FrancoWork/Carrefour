@@ -63,7 +63,7 @@ body {
 
 .prensentation {
     position: fixed;
-    animation: presentation 1s ease-out 0.5s 3 alternate both;
+    animation: presentation 1s ease-in-out 0.5s 1 normal backwards;
     top: 150px;
     left: 630px; 
     margin: auto;
@@ -76,10 +76,10 @@ body {
 
 }
 
-a:link {
-    /* text-decoration: none; */
+/* a:link {
+    text-decoration: none;
 
-}
+} */
 
 .wtsp {
 
@@ -88,7 +88,7 @@ a:link {
     flex-direction: column;
     bottom: 50px;
     left: 10px;
-    animation: contacto 2s ease-in-out 1s 1 normal forwards;
+    animation: contacto 4s ease-in-out 1ms infinite normal forwards;
 }
 
 @keyframes contacto {
@@ -122,6 +122,11 @@ a:link {
 		opacity: 0;
 		transform: translateX(-250px) rotate(-200deg);
 	}
+
+    50% {
+        opacity: 0.5;
+		transform: translateX(+150px) rotate(-100deg);
+    }
 
 	100% {
 		opacity: 1;
