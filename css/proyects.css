@@ -1,0 +1,117 @@
+* {
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    
+    background-image: url(/img/carrefour.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.home {
+
+    width: 25px;
+    /* background-color: blue; */
+    border: 0.5px solid;
+
+    background-color: green;
+
+}
+
+h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+    font-size: 6em;
+    text-align: center;
+    margin-bottom: 0;
+    margin-bottom: -0.25em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    width: 605px;
+    
+    
+    
+}
+
+.others span{
+    position: absolute;
+    top: 400px;
+    right: 0px;
+    font-size: 15px;
+}
+
+.gradient-text {
+
+    background-color: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(63, 152, 27, 1) 35%, rgba(0, 65, 255, 1) 100%);
+    ;
+
+
+    background-image:
+    linear-gradient(120deg, rgba(2,0,36,1) 0%, rgba(133,244,88,1) 50%, rgba(0,65,255,1) 100%);
+
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+}
+
+.gradient-text:hover {
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+.exact {
+
+    text-align: center;
+    padding: 25px;
+    /* background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(88,230,244,1) 50%, rgba(0,65,255,1) 100%); */
+    color: rgb(166, 248, 34);
+
+}
+
+
+
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+
+    40% {
+        background-size: 650%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+
+
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+
+    80% {
+        background-size: 650%;
+    }
+
+    100% {
+        background-size: 650%;
+    }
+}
