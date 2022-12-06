@@ -20,7 +20,8 @@ body {
 .general {
 
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background: #2A4359; /* fallback color if gradients are not supported  */
@@ -28,7 +29,7 @@ body {
     background: -moz-linear-gradient(111deg,#2A4359 17%, rgba(120,192,255,0.8), rgba(57,22,255,0.8) 62%, #58DBFF 86%);
     background: -o-linear-gradient(111deg,#2A4359 17%, rgba(120,192,255,0.8), rgba(57,22,255,0.8) 62%, #58DBFF 86%);
     background: linear-gradient(111deg,#2A4359 17%, rgba(120,192,255,0.8), rgba(57,22,255,0.8) 62%, #58DBFF 86%);
-    
+    /* animation: apear 1s ease 0s 1 normal forwards; */
 }
 
 .imgs {
@@ -57,6 +58,12 @@ article :hover {
 
 }
 
+article {
+
+    animation: apear 2s ease 0s 1 normal forwards;
+
+}
+
 
 div :hover{
 
@@ -81,5 +88,19 @@ div :hover{
     transform: rotate(300deg);
     transition-delay: 2ms;
 
+}
+
+@keyframes apear {
+	0% {
+		opacity: 0;
+		transform: rotateX(-100deg);
+		transform-origin: top;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+		transform-origin: top;
+	}
 }
 
